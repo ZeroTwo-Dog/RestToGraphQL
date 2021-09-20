@@ -1,0 +1,5 @@
+query {
+    member(id:1) {
+        name
+    }
+}
