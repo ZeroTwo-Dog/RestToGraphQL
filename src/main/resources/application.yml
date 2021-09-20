@@ -17,3 +17,18 @@ spring:
 logging.level:
   org.hibernate.SQL: debug
 #  org.hibernate.type: trace
+
+
+graphql:
+  servlet:
+    enabled: true
+    mapping: /graphql
+    corsEnabled: false
+    cors:
+      allowed-origins: http://localhost:8080
+      allowed-methods: GET, HEAD, POST, PATCH
+    exception-handlers-enabled: true
+    context-setting: PER_REQUEST_WITH_INSTRUMENTATION
+  tools:
+    schema-location-pattern: "**/*.graphql"
+    introspection-enabled: false

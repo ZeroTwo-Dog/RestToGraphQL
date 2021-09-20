@@ -19,19 +19,24 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-validation'
-	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate5'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.4'
+	implementation 'org.springframework.boot:spring-boot-starter-validation:2.5.4'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.5.4'
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.5.4'
+	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:2.12.5'
 
-	compileOnly 'org.projectlombok:lombok'
-	runtimeOnly 'com.h2database:h2'
+	compile 'com.graphql-java-kickstart:graphql-spring-boot-starter:11.1.0'
+	compile 'com.graphql-java-kickstart:graphiql-spring-boot-starter:11.1.0'
+	compile 'com.graphql-java-kickstart:voyager-spring-boot-starter:11.1.0'
+	testCompile 'com.graphql-java-kickstart:graphql-spring-boot-starter-test:11.1.0'
 
-	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compileOnly 'org.projectlombok:lombok:1.18.20'
+	runtimeOnly 'com.h2database:h2:1.4.200'
+
+	annotationProcessor 'org.projectlombok:lombok:1.18.20'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.4'
 	//JUnit4 추가
-	testImplementation("org.junit.vintage:junit-vintage-engine") {
+	testImplementation('org.junit.vintage:junit-vintage-engine:5.8.0') {
 		exclude group: "org.hamcrest", module: "hamcrest-core"
 	}
 

@@ -1,0 +1,10 @@
+#all able queries
+type Query {
+     member(id: ID) : Member!
+#     memberName(name: String) : Member!
+}
+
+# 루트 뮤테이션 (Root Mutation)
+type Mutation {
+     saveMember(name: String!) : Member!
+}
