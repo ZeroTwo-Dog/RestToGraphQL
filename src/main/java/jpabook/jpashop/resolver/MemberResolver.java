@@ -17,7 +17,7 @@ public class MemberResolver implements GraphQLQueryResolver {
 
   private final MemberRepository memberRepository;
 
-  public List<Member> getMember() {
+  public List<Member> getMemberList() {
     return memberRepository.findAll();
   }
 

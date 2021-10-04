@@ -1,6 +1,7 @@
 #all able queries
 type Query {
      member(id: ID) : Member!
+     getMemberList: [Member]
 #     memberName(name: String) : Member!
 }
 

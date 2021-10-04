@@ -1,4 +1,11 @@
 type Member {
     id: ID!
     name: String!
+#    address: Address
 }
+
+#type Address @embedded {
+#    street: String!
+#    city: String!
+#    zipCode: String!
+#}
