@@ -21,8 +21,7 @@ public class Member {
     @Embedded
     private Address address;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "member")
+    @OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
     private List<Order> orders = new ArrayList<>();
 
 }

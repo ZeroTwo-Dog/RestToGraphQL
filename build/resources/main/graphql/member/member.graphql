@@ -1,4 +1,12 @@
 type Member {
     id: ID!
     name: String!
+    address: Address!
+    orders: [Order]!
+}
+
+type Address {
+    city: String
+    street: String
+    zipcode: String
 }
