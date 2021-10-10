@@ -1,0 +1,7 @@
+
+input UpdateMemberInput {
+    id: ID!
+    name: String!
+    address: AddressInput!
+}
+
