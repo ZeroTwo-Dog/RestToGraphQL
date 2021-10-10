@@ -23,12 +23,12 @@ graphql:
   servlet:
     enabled: true
     mapping: /graphql
-    corsEnabled: false
+    corsEnabled: true
     cors:
       allowed-origins: http://localhost:8080
       allowed-methods: GET, HEAD, POST, PATCH
-    exception-handlers-enabled: true
-    context-setting: PER_REQUEST_WITH_INSTRUMENTATION
   tools:
+    # resource 디렉토리 내의 스키마 파일의 위치 설정
     schema-location-pattern: "**/*.graphql"
+    # 스키마 확인 기능을 사용하여 타입 시스템
     introspection-enabled: false
