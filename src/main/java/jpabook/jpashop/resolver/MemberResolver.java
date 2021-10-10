@@ -1,5 +1,6 @@
 package jpabook.jpashop.resolver;
 
+import graphql.kickstart.tools.GraphQLMutationResolver;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import java.util.List;
 import jpabook.jpashop.domain.Member;
@@ -35,7 +36,6 @@ public class MemberResolver implements GraphQLQueryResolver {
       return null;
     }
   }
-
 
 
   public List<Member> memberName(String name) {
