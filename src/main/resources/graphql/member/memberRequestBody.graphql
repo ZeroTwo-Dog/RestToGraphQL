@@ -9,3 +9,9 @@ input AddressInput {
     street: String!
     zipcode: String!
 }
+
+input UpdateMemberInput {
+    id: ID!
+    name: String!
+    address: AddressInput!
+}
