@@ -1,0 +1,3 @@
+mutation {
+    deleteMember (id :15)
+}

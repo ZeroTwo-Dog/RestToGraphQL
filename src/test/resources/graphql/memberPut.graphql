@@ -1,0 +1,19 @@
+mutation {
+    updateMember(input : {
+        id:1
+        name: "park555"
+        address: {
+            city :"buchen"
+            street: "sosaro"
+            zipcode: "1441"
+        }
+    }) {
+        id
+        name
+        address {
+            city
+            street
+            zipcode
+        }
+    }
+}

@@ -1,0 +1,18 @@
+mutation {
+    saveMember(input : {
+        name: "park2"
+        address: {
+            city :"buchen"
+            street: "sosaro"
+            zipcode: "1441"
+        }
+    }) {
+        id
+        name
+        address {
+            city
+            street
+            zipcode
+        }
+    }
+}
