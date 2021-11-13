@@ -1,0 +1,11 @@
+type Order {
+    id: ID!
+    status: OrderStatus!
+    member: Member!
+    orderItems: [OrderItem]!
+}
+
+enum OrderStatus {
+    ORDER
+    CANCEL
+}

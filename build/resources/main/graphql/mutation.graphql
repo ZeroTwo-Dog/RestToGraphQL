@@ -1,0 +1,6 @@
+# 루트 뮤테이션 (Root Mutation)
+type Mutation {
+    saveMember(input: CreateMemberInput!) : Member!
+    updateMember (input: UpdateMemberInput!) : Member!
+    deleteMember(id: ID!) :Boolean!
+}

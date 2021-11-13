@@ -1,0 +1,17 @@
+
+input CreateMemberInput {
+    name: String!
+    address: AddressInput!
+}
+
+input AddressInput {
+    city: String!
+    street: String!
+    zipcode: String!
+}
+
+input UpdateMemberInput {
+    id: ID!
+    name: String!
+    address: AddressInput!
+}

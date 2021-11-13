@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MemberCRUDTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MemberCRUDTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/jpabook.jpashop.service.html">jpabook.jpashop.service</a> &gt; MemberCRUDTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.741s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">멤버 단건 삭제</td>
+<td class="success">memberDelete()</td>
+<td class="success">0.044s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">멤버 한건 저장</td>
+<td class="success">memberPost()</td>
+<td class="success">0.516s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">멤버 한건 수정</td>
+<td class="success">memberPut()</td>
+<td class="success">0.104s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">멤버 단건 조회</td>
+<td class="success">memberRead()</td>
+<td class="success">0.077s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>12:55:37.398 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+12:55:37.468 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+12:55:37.530 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [jpabook.jpashop.service.MemberCRUDTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+12:55:37.544 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [jpabook.jpashop.service.MemberCRUDTests], using SpringBootContextLoader
+12:55:37.549 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [jpabook.jpashop.service.MemberCRUDTests]: class path resource [jpabook/jpashop/service/MemberCRUDTests-context.xml] does not exist
+12:55:37.549 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [jpabook.jpashop.service.MemberCRUDTests]: class path resource [jpabook/jpashop/service/MemberCRUDTestsContext.groovy] does not exist
+12:55:37.549 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [jpabook.jpashop.service.MemberCRUDTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:55:37.550 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [jpabook.jpashop.service.MemberCRUDTests]: MemberCRUDTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:55:37.611 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [jpabook.jpashop.service.MemberCRUDTests]
+12:55:37.720 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/park/Documents/study/jpa-study/restToGraphQL/build/classes/java/main/jpabook/jpashop/JpashopApplication.class]
+12:55:37.723 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration jpabook.jpashop.JpashopApplication for test class jpabook.jpashop.service.MemberCRUDTests
+12:55:37.825 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [jpabook.jpashop.service.MemberCRUDTests]: using defaults.
+12:55:37.826 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+12:55:37.843 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@141ac793, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@24928a0a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@70ad243d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2dccf35c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6fa89f29, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5f5a9a0c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@46cfc116, org.springframework.test.context.event.EventPublishingTestExecutionListener@c539c80, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@27a91bf4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2c287ff7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1457dc15, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@470f583, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6be92842, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4d1350f]
+12:55:37.847 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@a4b33ce testClass = MemberCRUDTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1095b33 testClass = MemberCRUDTests, locations = '{}', classes = '{class jpabook.jpashop.JpashopApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@5e224c2f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7376b11a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7cc326ca, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@29a4b8c8, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@77ed1d1d, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@72e685f6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+12:55:37.869 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@a4b33ce testClass = MemberCRUDTests, testInstance = jpabook.jpashop.service.MemberCRUDTests@36159ba3, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1095b33 testClass = MemberCRUDTests, locations = '{}', classes = '{class jpabook.jpashop.JpashopApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@5e224c2f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7376b11a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7cc326ca, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@29a4b8c8, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@77ed1d1d, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@72e685f6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]]].
+12:55:37.946 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.1)
+
+2021-10-17 12:55:38.573  INFO 7521 --- [    Test worker] jpabook.jpashop.service.MemberCRUDTests  : Starting MemberCRUDTests using Java 11.0.12 on Jiui-MacBookAir.local with PID 7521 (started by park in /Users/park/Documents/study/jpa-study/restToGraphQL)
+2021-10-17 12:55:38.576  INFO 7521 --- [    Test worker] jpabook.jpashop.service.MemberCRUDTests  : No active profile set, falling back to default profiles: default
+2021-10-17 12:55:40.392  INFO 7521 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-17 12:55:40.472  INFO 7521 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interfaces.
+2021-10-17 12:55:41.633  INFO 7521 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-10-17 12:55:41.644  INFO 7521 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-17 12:55:41.645  INFO 7521 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-10-17 12:55:41.763  INFO 7521 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-17 12:55:41.764  INFO 7521 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3164 ms
+2021-10-17 12:55:42.192  INFO 7521 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-17 12:55:42.270  INFO 7521 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-10-17 12:55:42.422  INFO 7521 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-17 12:55:42.520  INFO 7521 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-17 12:55:42.617  INFO 7521 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-17 12:55:42.692  INFO 7521 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-17 12:55:43.803 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists category CASCADE 
+Hibernate: 
+    
+    drop table if exists category CASCADE 
+2021-10-17 12:55:43.827 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists category_item CASCADE 
+Hibernate: 
+    
+    drop table if exists category_item CASCADE 
+2021-10-17 12:55:43.830 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists delivery CASCADE 
+Hibernate: 
+    
+    drop table if exists delivery CASCADE 
+2021-10-17 12:55:43.832 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists item CASCADE 
+Hibernate: 
+    
+    drop table if exists item CASCADE 
+2021-10-17 12:55:43.833 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists member CASCADE 
+Hibernate: 
+    
+    drop table if exists member CASCADE 
+2021-10-17 12:55:43.835 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists order_item CASCADE 
+Hibernate: 
+    
+    drop table if exists order_item CASCADE 
+2021-10-17 12:55:43.836 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists orders CASCADE 
+Hibernate: 
+    
+    drop table if exists orders CASCADE 
+2021-10-17 12:55:43.840 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop sequence if exists hibernate_sequence
+Hibernate: 
+    
+    drop sequence if exists hibernate_sequence
+2021-10-17 12:55:43.845 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+2021-10-17 12:55:43.849 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table category (
+       category_id bigint not null,
+        name varchar(255),
+        parent_id bigint,
+        primary key (category_id)
+    )
+Hibernate: 
+    
+    create table category (
+       category_id bigint not null,
+        name varchar(255),
+        parent_id bigint,
+        primary key (category_id)
+    )
+2021-10-17 12:55:43.852 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table category_item (
+       category_id bigint not null,
+        item_id bigint not null
+    )
+Hibernate: 
+    
+    create table category_item (
+       category_id bigint not null,
+        item_id bigint not null
+    )
+2021-10-17 12:55:43.853 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table delivery (
+       delivery_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        status varchar(255),
+        primary key (delivery_id)
+    )
+Hibernate: 
+    
+    create table delivery (
+       delivery_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        status varchar(255),
+        primary key (delivery_id)
+    )
+2021-10-17 12:55:43.856 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table item (
+       dtype varchar(31) not null,
+        item_id bigint not null,
+        name varchar(255),
+        price integer not null,
+        stock_quantity integer not null,
+        artist varchar(255),
+        etc varchar(255),
+        author varchar(255),
+        isbn varchar(255),
+        actor varchar(255),
+        director varchar(255),
+        primary key (item_id)
+    )
+Hibernate: 
+    
+    create table item (
+       dtype varchar(31) not null,
+        item_id bigint not null,
+        name varchar(255),
+        price integer not null,
+        stock_quantity integer not null,
+        artist varchar(255),
+        etc varchar(255),
+        author varchar(255),
+        isbn varchar(255),
+        actor varchar(255),
+        director varchar(255),
+        primary key (item_id)
+    )
+2021-10-17 12:55:43.867 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table member (
+       member_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        name varchar(255),
+        primary key (member_id)
+    )
+Hibernate: 
+    
+    create table member (
+       member_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        name varchar(255),
+        primary key (member_id)
+    )
+2021-10-17 12:55:43.873 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table order_item (
+       order_item_id bigint not null,
+        count integer not null,
+        order_price integer not null,
+        item_id bigint,
+        order_id bigint,
+        primary key (order_item_id)
+    )
+Hibernate: 
+    
+    create table order_item (
+       order_item_id bigint not null,
+        count integer not null,
+        order_price integer not null,
+        item_id bigint,
+        order_id bigint,
+        primary key (order_item_id)
+    )
+2021-10-17 12:55:43.879 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table orders (
+       order_id bigint not null,
+        order_date timestamp,
+        status varchar(255),
+        delivery_id bigint,
+        member_id bigint,
+        primary key (order_id)
+    )
+Hibernate: 
+    
+    create table orders (
+       order_id bigint not null,
+        order_date timestamp,
+        status varchar(255),
+        delivery_id bigint,
+        member_id bigint,
+        primary key (order_id)
+    )
+2021-10-17 12:55:43.885 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table category 
+       add constraint FK2y94svpmqttx80mshyny85wqr 
+       foreign key (parent_id) 
+       references category
+Hibernate: 
+    
+    alter table category 
+       add constraint FK2y94svpmqttx80mshyny85wqr 
+       foreign key (parent_id) 
+       references category
+2021-10-17 12:55:43.894 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table category_item 
+       add constraint FKu8b4lwqutcdq3363gf6mlujq 
+       foreign key (item_id) 
+       references item
+Hibernate: 
+    
+    alter table category_item 
+       add constraint FKu8b4lwqutcdq3363gf6mlujq 
+       foreign key (item_id) 
+       references item
+2021-10-17 12:55:43.897 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table category_item 
+       add constraint FKcq2n0opf5shyh84ex1fhukcbh 
+       foreign key (category_id) 
+       references category
+Hibernate: 
+    
+    alter table category_item 
+       add constraint FKcq2n0opf5shyh84ex1fhukcbh 
+       foreign key (category_id) 
+       references category
+2021-10-17 12:55:43.902 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table order_item 
+       add constraint FKija6hjjiit8dprnmvtvgdp6ru 
+       foreign key (item_id) 
+       references item
+Hibernate: 
+    
+    alter table order_item 
+       add constraint FKija6hjjiit8dprnmvtvgdp6ru 
+       foreign key (item_id) 
+       references item
+2021-10-17 12:55:43.910 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table order_item 
+       add constraint FKt4dc2r9nbvbujrljv3e23iibt 
+       foreign key (order_id) 
+       references orders
+Hibernate: 
+    
+    alter table order_item 
+       add constraint FKt4dc2r9nbvbujrljv3e23iibt 
+       foreign key (order_id) 
+       references orders
+2021-10-17 12:55:43.915 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table orders 
+       add constraint FKtkrur7wg4d8ax0pwgo0vmy20c 
+       foreign key (delivery_id) 
+       references delivery
+Hibernate: 
+    
+    alter table orders 
+       add constraint FKtkrur7wg4d8ax0pwgo0vmy20c 
+       foreign key (delivery_id) 
+       references delivery
+2021-10-17 12:55:43.919 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member
+Hibernate: 
+    
+    alter table orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member
+2021-10-17 12:55:43.945  INFO 7521 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-17 12:55:43.954  INFO 7521 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-17 12:55:44.761  WARN 7521 --- [    Test worker] .k.t.b.GraphQLJavaToolsAutoConfiguration : GraphQL introspection query disabled! This puts your server in contravention of the GraphQL specification and expectations of most clients, so use this option with caution
+Init1class jpabook.jpashop.InitService
+2021-10-17 12:55:46.647 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.693 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.697 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.705 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.706 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.709 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.710 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.720 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        member
+        (city, street, zipcode, name, member_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        member
+        (city, street, zipcode, name, member_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-10-17 12:55:46.726 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+Hibernate: 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+2021-10-17 12:55:46.729 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+Hibernate: 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+2021-10-17 12:55:46.733 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        delivery
+        (city, street, zipcode, status, delivery_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        delivery
+        (city, street, zipcode, status, delivery_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-10-17 12:55:46.736 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        orders
+        (delivery_id, member_id, order_date, status, order_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        orders
+        (delivery_id, member_id, order_date, status, order_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-10-17 12:55:46.745 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-10-17 12:55:46.748 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-10-17 12:55:46.752 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+Hibernate: 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+2021-10-17 12:55:46.763 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+Hibernate: 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+2021-10-17 12:55:46.776 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.778 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.779 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.781 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.782 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.784 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.785 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:46.788 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        member
+        (city, street, zipcode, name, member_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        member
+        (city, street, zipcode, name, member_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-10-17 12:55:46.793 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+Hibernate: 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+2021-10-17 12:55:46.794 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+Hibernate: 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+2021-10-17 12:55:46.796 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        delivery
+        (city, street, zipcode, status, delivery_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        delivery
+        (city, street, zipcode, status, delivery_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-10-17 12:55:46.797 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        orders
+        (delivery_id, member_id, order_date, status, order_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        orders
+        (delivery_id, member_id, order_date, status, order_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-10-17 12:55:46.800 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-10-17 12:55:46.802 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-10-17 12:55:46.803 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+Hibernate: 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+2021-10-17 12:55:46.805 DEBUG 7521 --- [    Test worker] org.hibernate.SQL                        : 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+Hibernate: 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+2021-10-17 12:55:47.055  WARN 7521 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-17 12:55:47.210  INFO 7521 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-17 12:55:47.381  INFO 7521 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-10-17 12:55:48.152  INFO 7521 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-10-17 12:55:48.235  INFO 7521 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 54692 (http) with context path ''
+2021-10-17 12:55:48.256  INFO 7521 --- [    Test worker] jpabook.jpashop.service.MemberCRUDTests  : Started MemberCRUDTests in 10.303 seconds (JVM running for 12.061)
+2021-10-17 12:55:48.762 DEBUG 7521 --- [o-auto-1-exec-2] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2021-10-17 12:55:48.769 DEBUG 7521 --- [o-auto-1-exec-2] org.hibernate.SQL                        : 
+    insert 
+    into
+        member
+        (city, street, zipcode, name, member_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        member
+        (city, street, zipcode, name, member_id) 
+    values
+        (?, ?, ?, ?, ?)
+2021-10-17 12:55:48.900 DEBUG 7521 --- [o-auto-1-exec-5] org.hibernate.SQL                        : 
+    select
+        member0_.member_id as member_i1_4_0_,
+        member0_.city as city2_4_0_,
+        member0_.street as street3_4_0_,
+        member0_.zipcode as zipcode4_4_0_,
+        member0_.name as name5_4_0_ 
+    from
+        member member0_ 
+    where
+        member0_.member_id=?
+Hibernate: 
+    select
+        member0_.member_id as member_i1_4_0_,
+        member0_.city as city2_4_0_,
+        member0_.street as street3_4_0_,
+        member0_.zipcode as zipcode4_4_0_,
+        member0_.name as name5_4_0_ 
+    from
+        member member0_ 
+    where
+        member0_.member_id=?
+2021-10-17 12:55:48.919 DEBUG 7521 --- [o-auto-1-exec-5] org.hibernate.SQL                        : 
+    select
+        orders0_.member_id as member_i5_6_1_,
+        orders0_.order_id as order_id1_6_1_,
+        orders0_.order_id as order_id1_6_0_,
+        orders0_.delivery_id as delivery4_6_0_,
+        orders0_.member_id as member_i5_6_0_,
+        orders0_.order_date as order_da2_6_0_,
+        orders0_.status as status3_6_0_ 
+    from
+        orders orders0_ 
+    where
+        orders0_.member_id=?
+Hibernate: 
+    select
+        orders0_.member_id as member_i5_6_1_,
+        orders0_.order_id as order_id1_6_1_,
+        orders0_.order_id as order_id1_6_0_,
+        orders0_.delivery_id as delivery4_6_0_,
+        orders0_.member_id as member_i5_6_0_,
+        orders0_.order_date as order_da2_6_0_,
+        orders0_.status as status3_6_0_ 
+    from
+        orders orders0_ 
+    where
+        orders0_.member_id=?
+2021-10-17 12:55:48.938 DEBUG 7521 --- [o-auto-1-exec-5] org.hibernate.SQL                        : 
+    update
+        member 
+    set
+        city=?,
+        street=?,
+        zipcode=?,
+        name=? 
+    where
+        member_id=?
+Hibernate: 
+    update
+        member 
+    set
+        city=?,
+        street=?,
+        zipcode=?,
+        name=? 
+    where
+        member_id=?
+2021-10-17 12:55:49.006 DEBUG 7521 --- [o-auto-1-exec-8] org.hibernate.SQL                        : 
+    select
+        member0_.member_id as member_i1_4_0_,
+        member0_.city as city2_4_0_,
+        member0_.street as street3_4_0_,
+        member0_.zipcode as zipcode4_4_0_,
+        member0_.name as name5_4_0_,
+        orders1_.member_id as member_i5_6_1_,
+        orders1_.order_id as order_id1_6_1_,
+        orders1_.order_id as order_id1_6_2_,
+        orders1_.delivery_id as delivery4_6_2_,
+        orders1_.member_id as member_i5_6_2_,
+        orders1_.order_date as order_da2_6_2_,
+        orders1_.status as status3_6_2_ 
+    from
+        member member0_ 
+    left outer join
+        orders orders1_ 
+            on member0_.member_id=orders1_.member_id 
+    where
+        member0_.member_id=?
+Hibernate: 
+    select
+        member0_.member_id as member_i1_4_0_,
+        member0_.city as city2_4_0_,
+        member0_.street as street3_4_0_,
+        member0_.zipcode as zipcode4_4_0_,
+        member0_.name as name5_4_0_,
+        orders1_.member_id as member_i5_6_1_,
+        orders1_.order_id as order_id1_6_1_,
+        orders1_.order_id as order_id1_6_2_,
+        orders1_.delivery_id as delivery4_6_2_,
+        orders1_.member_id as member_i5_6_2_,
+        orders1_.order_date as order_da2_6_2_,
+        orders1_.status as status3_6_2_ 
+    from
+        member member0_ 
+    left outer join
+        orders orders1_ 
+            on member0_.member_id=orders1_.member_id 
+    where
+        member0_.member_id=?
+2021-10-17 12:55:49.051 DEBUG 7521 --- [o-auto-1-exec-1] org.hibernate.SQL                        : 
+    select
+        member0_.member_id as member_i1_4_0_,
+        member0_.city as city2_4_0_,
+        member0_.street as street3_4_0_,
+        member0_.zipcode as zipcode4_4_0_,
+        member0_.name as name5_4_0_,
+        orders1_.member_id as member_i5_6_1_,
+        orders1_.order_id as order_id1_6_1_,
+        orders1_.order_id as order_id1_6_2_,
+        orders1_.delivery_id as delivery4_6_2_,
+        orders1_.member_id as member_i5_6_2_,
+        orders1_.order_date as order_da2_6_2_,
+        orders1_.status as status3_6_2_ 
+    from
+        member member0_ 
+    left outer join
+        orders orders1_ 
+            on member0_.member_id=orders1_.member_id 
+    where
+        member0_.member_id=?
+Hibernate: 
+    select
+        member0_.member_id as member_i1_4_0_,
+        member0_.city as city2_4_0_,
+        member0_.street as street3_4_0_,
+        member0_.zipcode as zipcode4_4_0_,
+        member0_.name as name5_4_0_,
+        orders1_.member_id as member_i5_6_1_,
+        orders1_.order_id as order_id1_6_1_,
+        orders1_.order_id as order_id1_6_2_,
+        orders1_.delivery_id as delivery4_6_2_,
+        orders1_.member_id as member_i5_6_2_,
+        orders1_.order_date as order_da2_6_2_,
+        orders1_.status as status3_6_2_ 
+    from
+        member member0_ 
+    left outer join
+        orders orders1_ 
+            on member0_.member_id=orders1_.member_id 
+    where
+        member0_.member_id=?
+2021-10-17 12:55:49.069 DEBUG 7521 --- [o-auto-1-exec-1] org.hibernate.SQL                        : 
+    delete 
+    from
+        member 
+    where
+        member_id=?
+Hibernate: 
+    delete 
+    from
+        member 
+    where
+        member_id=?
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6</a> at 2021. 10. 17. 오후 12:55:49</p>
+</div>
+</div>
+</body>
+</html>

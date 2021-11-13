@@ -27,8 +27,6 @@ public class Member {
     @Embedded
     private Address address;
 
-
-    //FIXME: 현재 Order graphql 조회가 EAGER때만 가능 조치 필요
-    @OneToMany(mappedBy = "member", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
     private List<Order> orders = new ArrayList<>();
 }
